@@ -1,0 +1,303 @@
+
+header 
+	width: 200px
+.text-right
+	text-align: right
+.text-left
+	text-align: left
+.text-center
+	text-align: center
+p
+	margin: 0px
+
+body
+	padding: 0
+	margin: 0
+	background: #eee
+
+header
+	padding: 0px
+	width: 100%
+	&::after
+		content: ""
+		display: block
+		clear: both
+	.logo
+		width: 50%
+		float: left
+		margin-left: 5%
+	nav.navigation
+		width: 45%
+		float: right
+		display: flex
+		justify-content: space-between
+		a
+			text-decoration: none
+			color: #111
+			text-transform: uppercase
+			font-size: 14px
+			padding: 30px 15px
+			transition: all .7s
+			&:hover
+				color: #fff
+				background-color: #565656
+		a.fa
+			font-size: 30px
+			padding: 25px 15px 30px 15px
+			color: #fff
+			background-color: #565656
+
+section.slider
+	background: #0E8FAB url(/images/noise.png)
+	overflow: hidden
+	.inner-slider
+		width: 300%
+		display: flex
+		overflow: hidden
+		justify-content: space-around
+		position: relative
+		.slide
+			text-align: left
+			font-size: 0
+			width: 100%
+			padding: 20px 150px 0 150px
+			.inner-slide
+				width: 100%
+				display: flex
+				.text
+					width: 60%
+					padding-left: 20px
+					h1
+						text-transform: uppercase
+						color: #fff
+						margin-top: 100px
+						text-shadow: 0 0 6px rgba(0,0,0,.6)
+						font-size: 32px
+						font-weight: 900
+					p
+						margin-top: 40px
+						color: #eee
+						line-height: 1.5
+						text-shadow: 0 0 4px rgba(0,0,0,.6)
+						font-size: 20px
+					button
+						background: #333333
+						border: none
+						text-transform: uppercase
+						color: #fff
+						padding: 7px 20px
+						font-size: 19px
+						margin-top: 40px
+						font-weight: 800
+				.image
+					width: 40%
+					padding: 20px 0 0 0
+					text-align: center
+					img
+						display: inline-block
+
+section.icons-and-descr
+	padding: 0 0px
+	background: #fff
+	.container
+		background: #2C2C2C
+		display: flex
+		justify-content: space-around
+		.icon-container
+			border-right: 1px solid #555555
+			padding: 25px 15px
+			.inner-icon-container
+				display: flex
+				justify-content: center
+				i.fa
+					color: #fff
+					align-self: center
+					font-size: 50px
+					width: 25%
+				p
+					color: #999
+					width: 70%
+					font-size: .9em
+					line-height: 20px
+
+section.advantage-descr
+	padding-top: 50px
+	text-align: center
+	.advantages
+		display: flex
+		justify-content: space-around
+		.advantage-container
+			padding: 20px
+			.inner-advantage-container
+				border: 1px solid #ddd
+				background: #fff
+				.adv-name
+					background-color: #0E8FAB
+					color: #eee
+					font-size: 19px
+					text-transform: uppercase
+					p
+						padding: 10px 20px
+						font-weight: 100
+					i.fa
+						padding-right: 20px
+				.advantage-text-container
+					padding: 0 20px
+					p.originality
+						text-transform: uppercase
+						font-size: 21px
+						padding: 20px 0
+					p.originality-description
+						color: #777
+						font-size: 15px
+						line-height: 1.5
+						margin-bottom: 20px	
+				span.last-icon
+					padding: 6px 9px
+					background-color: #0E8FAB
+					outline: 1px solid #0e8fab
+					color: #fff
+					&:hover
+						background-color: #333
+
+section.showcase
+	h2
+		padding-left: 20px
+		text-transform: uppercase
+		.move-icons
+			float: right
+			display: inline-block
+			margin-right: 20px
+			.fa-angle-right,
+			.fa-angle-left
+				padding: 4px 10px
+				font-size: .8em
+				background: #555
+				color: #eee
+	.showcase-carousel
+		overflow: hidden
+		.inner-showcase-carousel
+			position: relative
+			display: flex
+			justify-content: left
+			.case
+				background: #fff
+				margin: 0 1.4%
+				.inner-case
+					position: relative
+					border-bottom: 1px solid rgba(0,0,0,.3)
+					.text-container
+						padding: 10px
+						p.bold
+							font-weight: bold
+							text-align: center
+						hr
+							color: rgba(255,255,255,.2)
+							margin: 10px 0 5px 0
+						p.descr
+							text-align: center
+							color: #555
+							font-size: .95em
+					&::after
+						content: ""
+						width: 100%
+						display: block
+						position: absolute
+						bottom: 1px
+						left: 0
+						z-index: 1
+						border-bottom: 1px solid rgba(0,0,0,.3) 
+
+section.download
+	border: 1px solid #ddd
+	border-left: 3px solid #0E8FAB
+	margin: 40px 20px
+	background: #fff
+	padding: 30px 30px 0 30px
+	.inner-download
+		.down-descr
+			width: 65%
+			float: left
+			h4
+				text-transform: uppercase
+				margin: 0
+				font-size: 15px
+				line-height: 27px
+			p
+				color: #555
+				font-size: .9em
+				line-height: 1.8
+		.download
+			float: right
+			width: 30%
+			border: none
+			padding: 20px 5px
+			background: #0E8FAB
+			color: #fff
+			text-transform: uppercase
+			font-size: 1.3em
+			font-weight: 100
+			box-shadow: 0 1px 2px #222
+			transition: opacity .5s
+			&:hover
+				opacity: .8
+				cursor: pointer
+	&:after
+		content: ""
+		display: block
+		height: 0
+		clear: both
+
+section.pre-footer
+	display: flex
+	padding: 40px 10px
+	border-bottom: 1px solid #333
+	background-color: #222
+	justify-content: space-around
+	.logo
+		align-self: center
+	.column
+		width: 20%
+		h4
+			padding: 20px 5px
+			padding-left: 0
+			position: relative
+			border-bottom: 1px solid #333
+			text-transform: uppercase
+			color: #fff
+			&::after
+				content: ""
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 60%
+				border-bottom: 1px solid #0E8FAB
+		ul
+			padding-left: 0
+			list-style-type: none
+			li
+				float: left
+				padding-right: 15px
+				color: #777
+				font-size: .95em
+			.fa
+				display: inline-block
+				border-radius: 50%
+				background-color: #333
+				padding: 8px
+				color: #fff
+				font-size: 1.1em
+		p
+			font-size: .9em
+			line-height: 1.5
+			color: #777
+
+footer.footer
+	padding: 10px 25px
+	background: #111
+	color: #444
+	.inner-footer
+		display: flex
+		p
+			width: 50%
+			font-size: .85em
